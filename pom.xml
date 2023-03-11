@@ -2,3 +2,17 @@
   <sonar.organization>teamcity-myorgkey</sonar.organization>
   <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 </properties>
+
+<!--# Changes for Software Composition Analysis Scan using Snyk
+#By LBirss
+#11/03/2023 16:48 PM UTC
+-->
+    <plugin>
+      <groupId>io.snyk</groupId>
+      <artifactId>snyk-maven-plugin</artifactId>
+      <version>2.0.0</version>
+      <inherited>false</inherited>
+      <configuration>
+        <org>asecurityguru</org>
+      </configuration>
+    </plugin>
